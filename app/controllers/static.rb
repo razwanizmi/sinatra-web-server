@@ -10,5 +10,6 @@ end
 
 get '/:short_url' do
   url = Url.find_by(short_url: params[:short_url])
+  url.add_click!
   redirect to url.long_url
 end

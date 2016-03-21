@@ -5,7 +5,7 @@ Enter URL:
 </form>
 
 <% @url.each do |url| %>
-	<p> Long url: <%= url.long_url %>      Short url: <%= "http://localhost:9393/" + url.short_url %></p>
+	<p> Long url: <%= url.long_url %> Short url: <%= "http://localhost:9393/" + url.short_url %> Click counter: <%= url.click_count %> </p>
 <% end %>
 
 <!-- <h1>Hello World</h1>
