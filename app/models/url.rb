@@ -1,5 +1,5 @@
 class Url < ActiveRecord::Base
-
+  validates_format_of :long_url, :with => /(https?:\/\/)/, :on => :create, message: "is not typed in proper format"
   before_save :shorten!
 
   def shorten! 
@@ -10,5 +10,4 @@ class Url < ActiveRecord::Base
     self.click_count += 1
     self.save
   end
-
 end
