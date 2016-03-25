@@ -8,7 +8,7 @@
 <br>
 <br>
 <br>
-<img id="image1" src="http://localhost:9393/img/hobb_logo.png">
+<img id="image1" src="https://hobb-it.herokuapp.com/img/hobb_logo.png">
 <br>
 <div id=intro>
 	<p>SHORTEN. LIKE. HOBBIT. GEDDIT?</p>
@@ -30,7 +30,7 @@
   <% @url.reverse.each do |url| %>
     <tr>
 	  <td> <a href= <%= url.long_url %> target='_blank'> <%= url.long_url %> </a> </td>
-	  <td> <a href= <%= "http://localhost:9393/" + url.short_url %> target='_blank'> <%= "http://localhost:9393/" + url.short_url %> </a> </td>
+	  <td> <a href= <%= "http://localhost:9393/" + url.short_url %> target='_blank'> <%= "http://hobb-it.herokuapp.com/" + url.short_url %> </a> </td>
 	  <td> <%= url.click_count %> </td>
     </tr>
   <% end %>
