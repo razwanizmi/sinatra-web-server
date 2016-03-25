@@ -1,0 +1,65 @@
+body {
+    background-image: url("http://img05.deviantart.net/573b/i/2013/055/b/b/middle_earth_by_jjpeabody-d5w1n7j.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table#t01 tr {
+    background:rgba(112, 128, 144, 0.75);
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
+.url_form {
+	text-align: center;
+}
+
+#image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    text-align: center;
+}
+
+#field {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    width: 30%;
+}
+#button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
+}
+#button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+p {
+    color: #dbdbdb;
+}

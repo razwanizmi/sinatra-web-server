@@ -1,5 +1,5 @@
 get '/' do
-  @url = Url.all
+  @url = Url.last(50)
   erb :"static/index"
 end
 

@@ -1,9 +1,37 @@
-<form action="/urls" method="post">
-Enter URL:
-	<input type ="text" name="long_url">
-	<input type="submit" value="Submit">
-</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img id="image1" src="http://localhost:9393/img/hobb_logo.png">
+<br>
+<div id=intro>
+	<p>SHORTEN. LIKE. HOBBIT. GEDDIT?</p>
+</div>
 
-<% @url.reverse.each do |url| %>
-	<p> Long url: <%= url.long_url %> Short url: <%= "http://localhost:9393/" + url.short_url %> Click counter: <%= url.click_count %> </p>
-<% end %>
+<div class="url_form">
+	<form action="/urls" method="post">
+		<input id="field" type ="text" name="long_url" placeholder="Enter URL">
+		<input id="button" type="submit" value="Submit">
+	</form>
+</div>
+<br>
+<table id="t01">
+  <tr>
+    <th>Long URL</th>
+    <th>Short URL</th>		
+    <th>Click Count</th>
+  </tr>
+  <% @url.reverse.each do |url| %>
+    <tr>
+	  <td> <a href= <%= url.long_url %> target='_blank'> <%= url.long_url %> </a> </td>
+	  <td> <a href= <%= "http://localhost:9393/" + url.short_url %> target='_blank'> <%= "http://localhost:9393/" + url.short_url %> </a> </td>
+	  <td> <%= url.click_count %> </td>
+    </tr>
+  <% end %>
+</table>
